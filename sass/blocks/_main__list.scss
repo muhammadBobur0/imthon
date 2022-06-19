@@ -1,0 +1,234 @@
+.main__list {
+  padding: 70px  0px;
+}
+
+.main__list__item {
+  display: flex;
+  align-items: center;
+}
+
+
+.bottom-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  margin-bottom: 168px;
+}
+
+.box {
+  margin-top: 0px;
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+
+
+.bottom-tittle {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #222222;
+  
+}
+
+.bottom-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%; 
+  color: #333333;
+}
+
+
+.carousel-control-prev-icon {
+  display: none;
+}
+
+.carousel-control-next-icon{
+  display: none;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #DDDDDD !important;
+} 
+
+
+.carousel  {
+  padding-bottom: 25px;
+}
+
+.carousel-indicators {
+  margin: 0;
+  justify-content: start;
+}
+
+.carousel-item  {
+  max-width: 280px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #EA625C;
+  &::before {
+    display: block;
+    width: 60px;
+    background-color: #EA625C;
+    border: 3px solid #EA625C;
+    margin-right: 10px;
+    content: "";
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  
+  &::after {
+    display: inline-block;
+    margin-left: auto;
+    width: 400px;
+    height: 600px;
+    background-image: url(../images/watch-in-hand.jpg);
+    background-size: 400px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+
+.main__list__bottom {
+  max-width: 490px;
+  
+}
+
+
+.main__list__bottom__tittle {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.bottom__text {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+  margin: 0;
+  margin-bottom: 30px;
+  &::before{
+    display: inline-block;
+    margin-right: 40px;
+    height: 96px;
+    border: 3px solid #888888;
+    background-color: #888888;
+    content: "";
+  }
+}
+
+.buy {
+  display: inline-block;
+  color: #fff;
+  background-color: #C9514C;
+  padding: 12px 90px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+}
+
+
+
+
+
+
+@media only screen  and (max-width:770px) {
+ 
+  .bottom-list__itam ~ .bottom-list__itam {
+    display: none;
+  }
+
+  .bottom-list__itam {
+    padding-top: 15px;
+    max-width: 310px;
+    margin: 0px auto;
+    flex-grow: 1;
+    background-color:  #F5F5F5;
+    margin-bottom: 110px;
+  }
+
+
+
+  .bottom {
+    flex-direction: column-reverse;
+    &::after {
+      display: inline-block;
+      margin-left: 0;
+      margin: 0px auto;
+      margin-bottom: 41px;
+      width: 393px;
+      height: 420px;
+      background-image: url(../images/watch-in-handmb.jpg);
+      background-size: 393px 420px;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+    }
+  }
+
+
+  .main__list__bottom {
+    max-width: 320px;
+    margin: 0px auto;
+  }
+
+
+
+}
+
+
+
+@media only screen  and (max-width:380px) {
+
+  .bottom {
+    flex-direction: column-reverse;
+    &::after {
+      display: inline-block;
+      margin-left: 0;
+      margin: 0px auto;
+      margin-bottom: 41px;
+      width: 280px;
+      height: 320px;
+      background-image: url(../images/watch-in-handmb.jpg);
+      background-size: 280px 320px;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+    }
+  }
+
+
+
+}
+
